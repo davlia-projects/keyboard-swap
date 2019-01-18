@@ -88,7 +88,7 @@ class Analyzer:
     def _score(self, word, cache):
         score = 0.0
         for i, ngram in enumerate(roll(word, NGRAMS)):
-            score += log(cache[ngram]) + i
+            score += log(cache[ngram])
         normalized_score = 1.0 - (abs(score) / self.lowest_score)
         return normalized_score
 
