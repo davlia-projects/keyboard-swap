@@ -1,0 +1,6 @@
+:q
+
+.vscode/
+__pycache__/
+cache.p
+log.l
